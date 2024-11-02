@@ -1,0 +1,13 @@
+"vim:ft=vim
+
+set clipboard=unnamed
+set hlsearch
+set ignorecase
+set multiple-cursors
+set clipboard+=ideaput
+
+" Remap multiple-cursors shortcuts to match terryma/vim-multiple-cursors
+nmap <C-n> <Plug>NextWholeOccurrence
+xmap <C-n> <Plug>NextWholeOccurrence
+nmap <C-x> <Plug>SkipOccurrence
+xmap <C-x> <Plug>SkipOccurrence

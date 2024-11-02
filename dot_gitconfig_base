@@ -1,0 +1,29 @@
+[merge]
+    tool = nvim
+
+[diff]
+    tool = difftastic
+;    external = difft
+
+[difftool]
+    prompt = false
+
+[pager]
+    difftool = true
+
+[difftool "difftastic"]
+    cmd = difft "$LOCAL" "$REMOTE"
+
+[mergetool]
+    prompt = false
+
+[mergetool "nvim"]
+	cmd = "nvim -d -c \"wincmd l\" -c \"norm ]c\" \"$LOCAL\" \"$MERGED\" \"$REMOTE\""
+
+[core]
+    editor = nvim
+
+[alias]
+    slog = !git --no-pager log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative -n 10
+    amnd = commit --amend --no-edit
+    branches = branch --sort=committerdate -vv

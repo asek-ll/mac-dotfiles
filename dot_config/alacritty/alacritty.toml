@@ -1,0 +1,39 @@
+import = [
+  # "~/.config/alacritty/themes/themes/ayu_light.toml"
+  "~/.config/alacritty/themes/themes/github_light.toml",
+  # "~/.config/alacritty/themes/themes/rose-pine-dawn.toml"
+  # "~/.config/alacritty/themes/themes/pencil_light.toml"
+
+]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 16
+
+[font.normal]
+family = "SFMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "SFMono Nerd Font"
+style = "Semibold"
+
+[font.italic]
+family = "SFMono Nerd Font"
+style = "Regular Italic"
+
+[font.bold_italic]
+family = "SFMono Nerd Font"
+style = "Semibold Italic"
+
+[font.offset]
+x = 0
+y = -1
+
+[window]
+opacity = 1
+option_as_alt = "Both"
+decorations = "None"
+dynamic_padding = true
